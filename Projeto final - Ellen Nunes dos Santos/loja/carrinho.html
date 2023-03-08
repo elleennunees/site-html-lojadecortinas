@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVB Atelie Cortinas - Carrinho</title>
+
+    <!-- Favicon -->
+    <!--<link rel="shortcut icon" href="../images/cortina1.jpg" type="image/x-icon">-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/design.css">
+    <link rel="stylesheet" href="../CSS/design-loja.css">
+    <link rel="stylesheet" href="../CSS/design-login.css">
+    <link rel="stylesheet" href="../CSS/design-carrinho.css">
+
+    <!-- JS -->
+    <script src="../js/produtos.js" defer></script>
+    <script src="../js/produtos-loja.js" defer></script>
+    <script src="../js/login-verificar.js" defer></script>
+    <script src="../js/carrinho-system.js" defer></script>
+
+</head>
+
+<body>
+    <!--inicio da barra de navegação-->
+    <header>
+        <div class="container_logo_site">
+            <img src="../images/logo.png" alt="Img">
+        </div>
+        <nav class="navbar">
+            <!--<input type="search" id="barra_pesquisa" onkeyup="buscarProdutos()" placeholder="Buscar...">-->
+            <p class="btn_navbar">
+                <a href="../index.html">Home</a>
+                <a href="loja.html">Produtos</a>
+                <a href="../user-login/login.html" id="login_none_cod3">Login</a>
+            </p>
+            <a href="../user-login/login-conta-user.html" class="icone_login">
+                <img src="../images/icone-usuario-login.png" alt="Img">
+            </a>
+            <a href="carrinho.html" class="icone_carrinho">
+                <img src="../images/icone-carrinho.png" alt="Img">
+            </a>
+        </nav>
+    </header>
+    <!--fim da barra de navegação-->
+
+
+    <!--inicio do banner-->
+    <div class="container_frase">
+        <h1>
+            Formulário. Preencha corretamente os seus dados e finalize o seu pedido. Boas compras!
+        </h1>
+    </div>
+    <!--fim do banner-->
+
+
+    <!-- inicio do formulario -->
+    <section class="form">
+        <div class="container-form">
+            <div class="row-form">
+                <form>
+                    <form action="Script_do_Formulario.php" method="post">
+                        <!-- DADOS PESSOAIS-->
+                        <fieldset>
+                            <legend>Dados Pessoais</legend>
+                            <table cellspacing="10">
+                                <tr>
+                                    <td>
+                                        <label for="nome">Nome: </label>
+                                    </td>
+                                    <td align="left">
+                                        <input type="text" name="email">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="data">Data de Nascimento: </label>
+                                    </td>
+                                    <td align="left">
+                                        <input type="date" id="data">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label>CPF:</label>
+                                    </td>
+                                    <td align="left">
+                                        <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text"
+                                            name="cpf2" size="2" maxlength="2">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="email">E-mail: </label>
+                                    </td>
+                                    <td align="left">
+                                        <input type="text" name="email">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="telefone">Telefone:</label>
+                                    </td>
+                                    <td align="left">
+                                        <input type="text" name="telefone" size="4">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <br />
+                        <!-- ENDEREÇO -->
+                        <fieldset>
+                            <legend>Dados de Endereço</legend>
+                            <table cellspacing="10">
+                                <tr>
+                                    <td>
+                                        <label for="endereco">Endereço:</label>
+                                    </td>
+                                    <td align="left">
+                                        <input type="text" name="endereco">
+                                    </td>
+                                    <td>
+                                        <label for="numero">Numero:</label>
+                                    </td>
+                                    <td align="left">
+                                        <input type="text" name="numero" size="4">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="bairro">Bairro: </label>
+                                    </td>
+                                    <td align="left">
+                                        <input type="text" name="bairro">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="estado">Estado:</label>
+                                    </td>
+                                    <td align="left">
+                                        <select name="estado">
+                                            <option value="ac">Acre</option>
+                                            <option value="al">Alagoas</option>
+                                            <option value="am">Amazonas</option>
+                                            <option value="ap">Amapá</option>
+                                            <option value="ba">Bahia</option>
+                                            <option value="ce">Ceará</option>
+                                            <option value="df">Distrito Federal</option>
+                                            <option value="es">Espírito Santo</option>
+                                            <option value="go">Goiás</option>
+                                            <option value="ma">Maranhão</option>
+                                            <option value="mt">Mato Grosso</option>
+                                            <option value="ms">Mato Grosso do Sul</option>
+                                            <option value="mg">Minas Gerais</option>
+                                            <option value="pa">Pará</option>
+                                            <option value="pb">Paraíba</option>
+                                            <option value="pr">Paraná</option>
+                                            <option value="pe">Pernambuco</option>
+                                            <option value="pi">Piauí</option>
+                                            <option value="rj">Rio de Janeiro</option>
+                                            <option value="rn">Rio Grande do Norte</option>
+                                            <option value="ro">Rondônia</option>
+                                            <option value="rs">Rio Grande do Sul</option>
+                                            <option value="rr">Roraima</option>
+                                            <option value="sc">Santa Catarina</option>
+                                            <option value="se">Sergipe</option>
+                                            <option value="sp">São Paulo</option>
+                                            <option value="to">Tocantins</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="cidade">Cidade: </label>
+                                    </td>
+                                    <td align="left">
+                                        <input type="text" name="cidade">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="cep">CEP: </label>
+                                    </td>
+                                    <td align="left">
+                                        <input type="text" name="cep" size="5" maxlength="5"> - <input type="text"
+                                            name="cep2" size="3" maxlength="3">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <br />
+                        <!-- DADOS DE LOGIN -->
+                        <fieldset>
+                            <legend>Detalhes da Compra</legend>
+                            <table cellspacing="10">
+                                <tr>
+                                    <td>
+                                        <label for="tipo">Tipo:</label>
+                                    </td>
+                                    <td align="left">
+                                        <select name="tipo">
+                                            <option value="liso">Liso</option>
+                                            <option value="estampado">Estampado</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="tecido">Tecido:</label>
+                                    </td>
+                                    <td align="left">
+                                        <select name="tecido">
+                                            <option value="voil">Voil</option>
+                                            <option value="linho">Linho</option>
+                                            <option value="cetim">Cetim</option>
+                                            <option value="oxford">Oxford</option>
+                                            <option value="blackout">Blackout</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="cor">Cor:</label>
+                                    </td>
+                                    <td align="left">
+                                        <select name="cor">
+                                            <option value="branco">Branco</option>
+                                            <option value="cinza">Cinza</option>
+                                            <option value="preto">Preto</option>
+                                            <option value="nude">Nude</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <form>
+                                            <label for="pag">Forma de Pagamento:</label>
+                                    </td>
+                                    <td align="left">
+                                        <input type="radio" name="pag" value="pix"> Pix <br />
+                                        <input type="radio" name="pag" value="cartao"> Cartão de Crédito<br />
+                                        <input type="radio" name="pag" value="boleto"> Boleto Bancário <br />
+                    </form>
+                    </td>
+                    </tr>
+
+                    </table>
+                    </fieldset>
+                    <br />
+                    <!--<input type="submit">
+                    <input type="reset" value="Limpar">-->
+                    <button type="submit" class="btn_enviar_pergunta">Enviar</button>
+                    <button input type="reset" class="btn_enviar_pergunta" value="Limpar">Limpar</button>
+                </form>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--fim do formulario-->
+
+
+
+    <!--inicio do footer-->
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer">
+                <h2>Envie sua dúvida!</h2>
+                <div class="enviar_pergunta_input">
+                    <div class="container_enviar_pergunta_input">
+                        <form>
+                            <input type="text" class="enviar_pergunta_nome" placeholder="Nome">
+                            <input type="email" class="enviar_pergunta_gmail" placeholder="E-mail">
+                            <input type="text" class="campo_pergunta" placeholder="Escreva sua dúvida aqui...">
+                            <button type="submit" class="btn_enviar_pergunta">Enviar</button>
+                            <button input type="reset" class="btn_enviar_pergunta" value="Limpar">Limpar</button>
+                            </form>
+                    </div>
+                </div>
+
+            </Div>
+            <div class="box__footer">
+                <h2>Soluções</h2>
+                <a href="../index.html">Home</a>
+                <a href="../loja/loja.html">Produtos</a>
+                <a href="../user-login/login.html" id="login_none_cod4">Login</a>
+            </Div>
+
+            <div class="box__footer">
+                <h2>Redes Sociais</h2>
+                <!--<a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a >
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a >
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a >-->
+                <a href="https://www.instagram.com/ivb_atelie/"><i class="instagram"></i> Instagram</a>
+            </Div>
+
+            <div class="box__footer">
+                <h2>Informações</h2>
+                <p>
+                    <span><b>Endereço:</b></span>
+                    QNM 0 Conjunto 0 Lote 0 - Ceilândia
+                </p>
+                <p>
+                    <span><b>E-mail:</b></span>
+                    <a href="contadiretorio@gmail.com"> contadiretorio@gmail.com</a>
+                </p>
+                <p>
+                    <span><b>Telefone:</b></span> (61) 90000-0000
+                </p>
+            </Div>
+        </Div>
+        <div>
+            <p class="direitos_autorais">
+                &copy; 2023 - IVB Atelie Cortinas
+            </p>
+        </div>
+
+    </footer>
+    <!--fim do footer-->
+
+    <script>
+        //Verificar se a conta está logada
+        let verific = localStorage.getItem('verificar_login')
+        let login_none_cod2 = document.querySelector('a#login_none_cod2')
+        if (verific == 'ContaCriada') {
+            login_none_cod2.style.display = 'none'
+        }
+
+    </script>
+</body>
+
+</html>

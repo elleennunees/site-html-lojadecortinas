@@ -1,0 +1,272 @@
+/*@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@400;600 & display=swap');*/
+
+
+/*informações do formulário*/
+
+.row-form {
+    color: rgb(160,82,45);
+    background-color: #ffe9cd;
+    margin: 0px 100px 0px 100px;
+    /*width: 1300px; */              /*ajuste da caixa com as informações;*/
+    padding: 50px 90px 50px 90px;
+    border: 0px solid rgb(160,82,45);   /*ajusta para ver as bordas do formulário*/
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  /*form div + div {
+    margin-top: 1em;
+  }*/
+  
+  label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 90px;                   /*bordas das caixas de texto*/
+    text-align: right;
+    font-family: 'DM Serif Display', serif;
+  }
+  
+  input, textarea {
+    font: 1em times new roman;      /*sans-serif*/
+    width: 250px;                  /*tamanhos das caixas de texto*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /*/background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 14px 52px;
+    border-radius: 30px;
+    color: rgb(160,82,45);
+    transition: .3s;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.111);*/
+    
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.background-carrinho {*/
+    /* Cor do <body> na aba Carrinho */
+   /* background-color: rgb(255, 255, 255);
+}
+
+
+/* Carrinho de Compras do Site */
+
+
+/*.main_carrinho {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+.container_carrinho {
+    display: inline-table;
+    width: 390px;
+    height: 100%;
+    background-color: #181818;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: .4s ease;
+    box-shadow:  0px 0px 8px rgba(0, 0, 0, 0.300);
+}
+
+.container_itens_compra {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.nome_produto_carrinho {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    color: white;
+}
+
+.bloco_carrinho {
+    display: inline-table;
+    align-items: center;
+    margin: 9px;
+}
+
+.bloco_carrinho img {
+    width: 103px;
+}
+
+.bloco2_carrinho {
+    display: inline-table;
+    width: 90px;
+    height: 90px;
+}
+
+.titulo_carrinho {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(200, 35, 35);
+    text-align: center;
+    padding: 10px 0px;
+    animation: desconto 5s infinite;
+}
+
+@keyframes desconto {
+    0% {
+        background-color: rgb(119, 41, 17);
+    }
+
+    30% {
+        background-color: rgb(200, 35, 35);
+    }
+
+    70% {
+        background-color: #a12212;
+    }
+
+    100% {
+        background-color: rgb(104, 0, 17);
+    }
+}
+
+.aumentar_quantidade {
+    width: 70px;
+    height: 40px;
+    padding-left: 30px;
+}
+
+.aumentar_quantidade input {
+    text-align: center;
+    outline: none;
+    border: none;
+    width: 90px;
+    height: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+}
+
+.aumentar_quantidade p {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(84, 84, 84);
+    font-weight: bold;
+}
+
+.btn_finalizar_compra {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.btn_finalizar_compra a {
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .3s;
+    background-color: blueviolet;
+    padding: 10px 30px;
+}
+
+.btn_finalizar_compra a:hover {
+    background-color: #533173;
+}
+
+.container_btn_finalizar {
+    width: 100%;
+    height: 130px;
+}
+
+
+/* Barra Pesquisa */
+
+
+/*#list li {
+    display: none;
+    padding: 10px 0px;
+    text-align: center;
+    transition: .3s;
+}
+
+#list li:hover {
+    background-color: #381f09;
+}
+
+.busca-itens a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    transition: .3s;
+}
+
+#barra_pesquisa {
+    outline: none;
+    border: none;
+    width: 34px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1e1e1e;
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+    transition: .4s;
+}
+
+#barra_pesquisa:hover {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.dadosBusca {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}*/

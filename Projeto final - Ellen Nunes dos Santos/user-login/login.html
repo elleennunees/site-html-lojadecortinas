@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVB Atelie Cortinas - Login</title>
+
+    <!-- Favicon -->
+    <!--<link rel="shortcut icon" href="../images/cortina1.jpg" type="image/x-icon">-->
+    <!--coloca a foto na aba de navegação -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/design.css">
+    <link rel="stylesheet" href="../CSS/design-login.css">
+
+
+    <!-- JS -->
+    <script src="../js/login-verificar.js" defer></script>
+</head>
+
+<body class="background_login">
+
+    <!--inicio da barra de navegação-->
+    <header>
+        <div class="container_logo_site">
+            <img src="../images/logo.png" alt="Img">
+        </div>
+
+        <nav class="navbar">
+            <p class="btn_navbar">
+                <a href="../index.html">Home</a>
+                <a href="../loja/loja.html">Produtos</a>
+                <a href="login.html">Login</a>
+            </p>
+            <a href="../loja/carrinho.html" class="icone_carrinho">
+                <img src="../images/icone-carrinho.png" alt="Img">
+            </a>
+        </nav>
+    </header>
+    <!--fim da barra de navegação-->
+
+
+    <!--inicio do bloco de login-->
+    <main class="container_login">
+        <div class="bloco_login">
+            <h1>
+                Login
+            </h1>
+            <p class="info_usuario">E-mail</p>
+            <input type="email" class="input_login" placeholder="E-mail" id="gmail">
+
+            <p class="info_usuario">Senha</p>
+            <input type="password" class="input_login" placeholder="Senha" id="senha">
+
+            <p class="btn_login">
+                <a href="#" onclick="verificarLogin()">Entrar</a>
+            </p>
+        </div>
+    </main>
+    <!--fim do bloco de login-->
+
+    
+    <!--inicio do footer-->
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer">
+                <h2>Envie sua dúvida!</h2>
+                <div class="enviar_pergunta_input">
+                    <div class="container_enviar_pergunta_input">
+                        <form>
+                            <input type="text" class="enviar_pergunta_nome" placeholder="Nome">
+                            <input type="email" class="enviar_pergunta_gmail" placeholder="E-mail">
+                            <input type="text" class="campo_pergunta" placeholder="Escreva sua dúvida aqui...">
+                            <button type="submit" class="btn_enviar_pergunta">Enviar</button>
+                            <input type="reset" class="btn_enviar_pergunta" value="Limpar"></button>
+                            </form>
+                    </div>
+                </div>
+            </Div>
+
+            <div class="box__footer">
+                <h2>Soluções</h2>
+                <a href="../index.html" id="">Home</a>
+                <a href="../loja/loja.html">Produtos</a>
+                <a href="../user-login/login.html" id="login_none_cod4">Login</a>
+            </Div>
+
+            <div class="box__footer">
+                <h2>Redes Sociais</h2>
+                <!--<a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a >
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a >
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a >-->
+                <a href="https://www.instagram.com/ivb_atelie/"><i class="instagram"></i> Instagram</a>
+            </Div>
+
+            <div class="box__footer">
+                <h2>Informações</h2>
+                <p>
+                    <span><b>Endereço:</b></span>
+                    QNM 0 Conjunto 0 Lote 0 - Ceilândia
+                </p>
+                <p>
+                    <span><b>E-mail:</b></span>
+                    <a href="contadiretorio@gmail.com"> contadiretorio@gmail.com</a>
+                </p>
+                <p>
+                    <span><b>Telefone:</b></span> (61) 90000-0000
+                </p>
+            </Div>
+        </Div>
+            <div>
+                <p class="direitos_autorais">
+                    &copy; 2023 - IVB Atelie Cortinas
+                </p>
+            </div>
+        
+    </footer>
+    <!--fim do footer-->
+    
+</body>
+
+</html>
